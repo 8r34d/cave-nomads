@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "debug": "DEBUG=cave-nomads:* npm start",
+    "dev": "nodemon ./bin/www",
+    "server": "DEBUG=cave-nomads:* npm run dev",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -11,7 +12,10 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "pug": "3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.6"
   }
 }
