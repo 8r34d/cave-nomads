@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "debug": "DEBUG=cave-nomads:* npm start",
     "start": "node ./bin/www"
   },
   "dependencies": {
